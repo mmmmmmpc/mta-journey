@@ -1,16 +1,16 @@
 PostgreSQL Role
 =========
 
-A role to deploy, initialize and configure a PostgreSQL database in RHEL7 / CentOS7
+A role to deploy, initialize and configure a PostgreSQL database in RHEL8
 
 Requirements
 ------------
 
-The system to run this role has to be subscribed (if RHEL), and configured with the base repo
+The system to run this role has to be subscribed (if RHEL), and configured with the default repo
 
 It can be done in RHEL with the following command (once subscribed)
 ```
-subscription-manager repos --disable='*' --enable='rhel-7-server-rpms'
+subscription-manager repos --disable='*' --enable='rhel-8-for-x86_64-baseos-rpms' --enable='rhel-8-for-x86_64-appstream-rpms'
 ```
 
 Role Variables
