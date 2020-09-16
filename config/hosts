@@ -1,0 +1,9 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+10.32.98.110 workstation.example.com workstation
+10.32.98.111 lb.example.com lb
+10.32.98.112 db.example.com db
+10.32.98.113 jboss0.example.com jboss0
+10.32.98.114 jboss1.example.com jboss1
+
