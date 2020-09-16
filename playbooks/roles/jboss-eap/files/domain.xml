@@ -99,7 +99,7 @@
             <subsystem xmlns="urn:jboss:domain:datasources:5.0">
                 <datasources>
                     <datasource jndi-name="java:jboss/datasources/TicketMonsterPostgreSQLDS" pool-name="PostgresDS" statistics-enabled="true">
-                        <connection-url>jdbc:postgresql://192.168.1.120:5432/ticketmonster</connection-url>
+                        <connection-url>jdbc:postgresql://db.example.com:5432/ticketmonster</connection-url>
                         <driver>org.postgresql</driver>
                         <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
                         <pool>
@@ -564,7 +564,7 @@
                 <remote-destination host="localhost" port="25"/>
             </outbound-socket-binding>
             <outbound-socket-binding name="proxy" source-port="0" fixed-source-port="false">
-                <remote-destination host="192.168.1.100" port="6666"/>
+                <remote-destination host="lb.example.com" port="6666"/>
             </outbound-socket-binding>
         </socket-binding-group>
     </socket-binding-groups>
