@@ -8,7 +8,7 @@
     state: latest
   with_items:
     - postgresql-server
-    - python-psycopg2
+    - python3-psycopg2
 
 - name: Initiate database
   command: 'postgresql-setup initdb'
