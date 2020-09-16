@@ -10,7 +10,7 @@ The system to run this role has to be subscribed (if RHEL), and configured with 
 
 It can be done in RHEL with the following command (once subscribed)
 ```
-subscription-manager repos --disable='*' --enable='rhel-8-for-x86_64-baseos-rpms' --enable='rhel-8-for-x86_64-appstream-rpms'
+subscription-manager repos --enable='jb-eap-7.3-for-rhel-8-x86_64-rpms'
 ```
 
 Role Variables
