@@ -8,7 +8,8 @@
 
 - name: Enable Mod_Cluster
   service: 
-    name: jbcs-httpd24-httpd
+    #name: jbcs-httpd24-httpd
+    name: httpd
     enabled: yes
     state: started
 
@@ -51,7 +52,7 @@
 - name: Copy Mod_Cluster-JBoss config
   copy:
     src: httpd.conf
-    dest: /opt/rh/jbcs-httpd24/root/etc/httpd/conf/httpd.conf
+    dest: /etc/httpd/conf/httpd.conf
     backup: yes
   notify:
     - Reload Mod_Cluster
