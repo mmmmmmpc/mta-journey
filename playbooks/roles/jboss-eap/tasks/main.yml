@@ -3,7 +3,7 @@
 #
 - name: Install JBoss EAP
   yum:
-    name: "@jboss-eap7"
+    name: "@jboss-eap7-jdk11"
     state: latest
   notify:
     - Start JBoss EAP
